@@ -6,6 +6,9 @@ void main(){
 
     float media = (nota1 + nota2 + nota3) / 3;
 
-    System.out.printf("A média das notas é: %.2f \n", media);
+    if(media >= 7)
+        System.out.printf("O aluno foi aprovado com média: %.2f \n", media);
+    else
+        System.out.printf("O aluno foi reprovado com média: %.2f \n", media);
 
 }
