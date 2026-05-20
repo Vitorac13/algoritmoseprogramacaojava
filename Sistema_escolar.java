@@ -81,14 +81,21 @@ O sistema deverá mostrar:
 
 void ExibirBoletim(float dadosAlunos[][][], int turmas, int alunos, int notas){
 
-    System.out.printf("%-10s %-10s %-10s %-10s %-10s %n", "Turma", "Aluno", "Nota 1", "Nota 2", "Nota 3");
+    
+    System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %n", "Turma", "Aluno", "Nota 1", "Nota 2", "Nota 3", "Média", "Situação");
     for(int i=0; i<turmas; i++){
         System.out.printf("%-70s %n", "-".repeat(70));
         for(int j=0; j<alunos; j++){
-                System.out.printf("%-10d %-10d ", i+1, j+1);
+            System.out.printf("%-10d %-10d ", i+1, j+1);
+            float total = 0;
             for(int k=0; k<notas; k++){
                 System.out.printf("%-10.2f ", dadosAlunos[i][j][k]);
+                total += dadosAlunos[i][j][k];
             }
+            System.out.printf("%-10.2f ", total/notas);
+            if(total/notas >= 7) IO.print("APROVADO");
+            else if(total/notas >= 5) IO.print("RECUPERAÇÃO");
+            else IO.print("REPROVADO");
             IO.println();
         }
     }
