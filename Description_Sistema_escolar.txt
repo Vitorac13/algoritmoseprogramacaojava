@@ -1,0 +1,57 @@
+Sistema Escolar
+Uma escola deseja desenvolver um sistema para controlar o desempenho dos alunos de suas turmas.
+O programa deverá possuir um menu interativo para realizar operações relacionadas às notas dos estudantes.
+A escola possui:
+•	3 turmas;
+•	4 alunos por turma;
+•	3 notas para cada aluno.
+________________________________________
+Funcionalidades do sistema
+O programa deverá apresentar o seguinte menu:
+1 - Cadastrar notas
+2 - Exibir boletim dos alunos
+3 - Exibir média das turmas
+4 - Exibir situação dos alunos
+5 - Encerrar programa
+________________________________________
+Requisitos
+1. Cadastro de notas
+O usuário deverá informar:
+•	a turma;
+•	o aluno;
+•	as 3 notas do aluno.
+As notas devem ser válidas entre 0 e 10.
+________________________________________
+2. Exibição do boletim
+O sistema deverá mostrar:
+•	turma;
+•	aluno;
+•	notas;
+•	média final;
+•	situação do aluno.
+________________________________________
+3. Média das turmas
+O programa deverá calcular e mostrar a média geral de cada turma.
+________________________________________
+4. Situação dos alunos
+Considere:
+•	média maior ou igual a 7 → APROVADO;
+•	média entre 5 e 6.9 → RECUPERAÇÃO;
+•	média abaixo de 5 → REPROVADO.
+O sistema deverá informar:
+•	quantidade de aprovados;
+•	quantidade de alunos em recuperação;
+•	quantidade de reprovados.
+________________________________________
+Regras adicionais
+•	O programa deverá continuar executando até que o usuário escolha a opção de encerramento.
+•	Caso o usuário digite uma opção inválida no menu, o sistema deverá informar o erro e solicitar outra opção.
+•	Os dados devem permanecer armazenados durante a execução do programa.
+________________________________________
+Desafio extra
+Implemente funcionalidades adicionais:
+•	aluno com maior média;
+•	aluno com menor média;
+•	média geral da escola;
+•	ranking das turmas.
+
