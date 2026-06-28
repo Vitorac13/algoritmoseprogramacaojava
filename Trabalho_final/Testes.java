@@ -11,15 +11,21 @@ void definirNumeros(){
         IO.println("O maior número é: " + num[2]);
     }
 
-    IO.println(num[0]);
-    IO.println(num[1]);
-    IO.println(num[2]);
+    //IO.println(num[0]);
+    //IO.println(num[1]);
+    //IO.println(num[2]);
 }
 
 float[] num = new float[3];
-
+//String[] nomes = new String[2];
 void main(){
 
-    definirNumeros();    
+    var nomes = new String[2];
+    nomes[0] = vitor;
+    nomes[1] = joao;
+    if(nomes[1] > nomes[0]){
+        IO.println(nomes[0] + " vem antes de " + nomes[1]);
+    } else IO.println(nomes[1] + " vem antes de " + nomes[0]);
+    definirNumeros();   
 
 }
