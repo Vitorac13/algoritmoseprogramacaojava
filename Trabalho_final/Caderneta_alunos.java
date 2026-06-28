@@ -1,4 +1,4 @@
-//Vitor Almeida Costa
+//Joao Vitor Carvalho e Vitor Almeida Costa
 
 //Pode mudar para alterar a quantidade de alunos
 int qtdAlunos = 10;
